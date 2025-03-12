@@ -87,7 +87,7 @@ console.log(getLength([1,2,3,4]));
 
 // 8. 
 
-// 9. funksiyaga k va n (n > k) soni kirsa k dan n gacha bo'lgan sonlarni array qilib qaytaring 
+// 9. funksiyaga k va n (n > k) soni kirsa k dan n gacha bo'lgan juft sonlarni array qilib qaytaring 
 
 function teksh (k:number, n:number):any {
     let array:any = []
