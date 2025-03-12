@@ -85,7 +85,21 @@ console.log(getLength([1,2,3,4]));
 
 
 
-// 8. 
+// 8. funksiyaga n (n > 0) soni kirsa ana shunga bo'lgan sonlarni array qilib qaytaring!
+
+// 8. funksiyaga n (n > 0) soni kirsa ana shunga bo'lgan sonlarni array qilib qaytaring!
+
+function sonlar(n:number):any {
+    let sonArray: any = [];
+    for (let i = 1; i <= n; i++) {
+        sonArray.push(i);
+    }
+    return sonArray;
+}
+console.log(sonlar(5))
+
+
+
 
 // 9. funksiyaga k va n (n > k) soni kirsa k dan n gacha bo'lgan juft sonlarni array qilib qaytaring 
 

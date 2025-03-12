@@ -52,8 +52,17 @@ function getLength(uzunlik) {
 }
 console.log(getLength('salom'));
 console.log(getLength([1, 2, 3, 4]));
-// 8. 
-// 9. funksiyaga k va n (n > k) soni kirsa k dan n gacha bo'lgan sonlarni array qilib qaytaring 
+// 8. funksiyaga n (n > 0) soni kirsa ana shunga bo'lgan sonlarni array qilib qaytaring!
+// 8. funksiyaga n (n > 0) soni kirsa ana shunga bo'lgan sonlarni array qilib qaytaring!
+function sonlar(n) {
+    var sonArray = [];
+    for (var i = 1; i <= n; i++) {
+        sonArray.push(i);
+    }
+    return sonArray;
+}
+console.log(sonlar(5));
+// 9. funksiyaga k va n (n > k) soni kirsa k dan n gacha bo'lgan juft sonlarni array qilib qaytaring 
 function teksh(k, n) {
     var array = [];
     for (var i = k; i <= n; i++) {
