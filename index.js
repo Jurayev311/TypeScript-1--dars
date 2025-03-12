@@ -4,7 +4,7 @@ function fullName(namefn) {
 }
 console.log(fullName('John Doe'));
 // 2. funksiyaga "Yes" kirsa true, "No" kirsa false agar bunday qiymatlar kirmasa null qaytarsin
-function booln(qiymat) {
+var booln = function (qiymat) {
     var natija = qiymat.toLowerCase();
     if (natija === 'yes') {
         return true;
@@ -15,7 +15,7 @@ function booln(qiymat) {
     else {
         return null;
     }
-}
+};
 console.log(booln('Yes'));
 // 3. uchta parametr qabul qiladi: name, age va isStudent. Agar foydalanuvchi student bo'lsa, "John is 25 years old and is a student" tarzida chiqsin. Aks holda "John is 25 years old and is not a student" deb qaytarsin.
 function tekshirish(name, age, isStudent) {
@@ -30,14 +30,9 @@ console.log(tekshirish("Javohir", 18, true));
 // 4. funksiya input nomli parametr qabul qiladi, u string yoki number bo'lishi mumkin.
 // agar number bo'lsa, uni kvadratga oshirsin
 // agar string bo'lsa, "Hello {input} shaklida qaytarsin"
-function nimadir(input) {
-    if (typeof input === "number") {
-        return Math.pow(input, 2);
-    }
-    else {
-        return "Hello ".concat(input);
-    }
-}
+var nimadir = function (input) {
+    return typeof input === 'number' ? Math.pow(input, 2) : "Hello ".concat(input);
+};
 console.log(nimadir(4));
 // 5. User turidagi tuple yarating, u quyidagi ma'lumotlarni saqlashi kerak.
 // id: number

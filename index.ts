@@ -9,7 +9,7 @@ console.log(fullName('John Doe'));
 
 // 2. funksiyaga "Yes" kirsa true, "No" kirsa false agar bunday qiymatlar kirmasa null qaytarsin
 
-function booln (qiymat:string):boolean | null {
+const booln = (qiymat:string):boolean | null => {
     let natija = qiymat.toLowerCase()
 
     if(natija === 'yes') {
@@ -41,12 +41,8 @@ console.log(tekshirish("Javohir", 18, true));
 // agar number bo'lsa, uni kvadratga oshirsin
 // agar string bo'lsa, "Hello {input} shaklida qaytarsin"
 
-function nimadir (input:string | number):string | number {
-    if(typeof input === "number") {
-        return input ** 2
-    } else {
-        return `Hello ${input}`
-    }
+const nimadir = function (input:string | number):string | number {
+    return typeof input === 'number' ? input ** 2 : `Hello ${input}`
 }
 
 console.log(nimadir(4));
